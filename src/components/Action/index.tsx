@@ -11,7 +11,7 @@ export const Action = ({ handleChange, handleSearch, value }: ActionProps) => {
     handleChange(event.target.value)
 
   return (
-    <div className="flex items-center justify-center gap-5">
+    <div className="flex flex-col items-center justify-center gap-5 sm:flex-row">
       <input
         type="text"
         placeholder="@usuario"

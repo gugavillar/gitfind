@@ -1,10 +1,11 @@
 export const Github = () => {
   return (
     <svg
-      width={400}
-      height="calc(100vh - 64px)"
+      width={320}
+      height="calc(100vh - 120px)"
       viewBox="0 0 216 411"
       fill="none"
+      className="absolute"
     >
       <path
         fill="url(#pattern0)"

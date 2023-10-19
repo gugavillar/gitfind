@@ -6,7 +6,7 @@ export const Home = () => {
   return (
     <main className="min-h-screen w-full bg-app">
       <Header />
-      <div className="grid grid-cols-appColumns">
+      <div className="h-full">
         <Github />
         <Search />
       </div>
