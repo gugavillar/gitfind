@@ -1,10 +1,11 @@
 import { Progress } from '@components/Progress'
+import { memo } from 'react'
 
 type EmptyStateProps = {
   isLoading: boolean
 }
 
-export const EmptyState = ({ isLoading }: EmptyStateProps) => {
+export const EmptyState = memo(({ isLoading }: EmptyStateProps) => {
   return (
     <div>
       <h3 className="text-center text-lg text-white">
@@ -13,4 +14,6 @@ export const EmptyState = ({ isLoading }: EmptyStateProps) => {
       {isLoading ? <Progress /> : null}
     </div>
   )
-}
+})
+
+EmptyState.displayName = 'EmptyState'
